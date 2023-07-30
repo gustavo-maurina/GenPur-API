@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "types": ["reflect-metadata", "jest"],
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@decorators": ["src/shared/decorators"],
+      "@decorators/*": ["src/shared/decorators/*"],
+      "@shared-dto": ["src/shared/dto"],
+      "@shared-dto/*": ["src/shared/dto/*"],
+      "@enums": ["src/shared/enums"],
+      "@enums/*": ["src/shared/enums/*"],
+      "@types": ["src/shared/types"],
+      "@types/*": ["src/shared/types/*"],
+      "@utils": ["src/shared/utils"],
+      "@utils/*": ["src/shared/utils/*"],
+      "@modules": ["src/modules"],
+      "@modules/*": ["src/modules/*"]
+    }
+  }
+}

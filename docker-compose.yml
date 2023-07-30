@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  dev_db:
+    image: postgres:13-alpine
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: my_app
+    networks:
+      - my-app-network
+
+  test_db:
+    image: postgres:13-alpine
+    ports:
+      - 5435:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: my_app
+    networks:
+      - my-app-network
+
+networks:
+  my-app-network:
